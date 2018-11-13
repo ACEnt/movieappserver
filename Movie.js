@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db = 'mongodb://paul:abc123@ds221242.mlab.com:21242/movies';
+const db = 'mongodb://alex:1q2w3e4r5t@ds241133.mlab.com:41133/alexmovies';
 
 mongoose
   .connect(
@@ -22,6 +22,6 @@ const schema = mongoose.Schema({
   poster: { type: String }
 });
 
-const Movie = mongoose.model('Movie', schema, 'movieCollection');
+const Movie = mongoose.model('Movie', schema, 'MovieCollection');
 
 module.exports = Movie;
