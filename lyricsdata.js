@@ -17,7 +17,8 @@ const schema = mongoose.Schema({
   lyrics: { type: String },
   title: { type: String },
   artist: { type: String },
-  link: { type: String }
+  link: { type: String },
+  tubeimg: { type: String }
 });
 
 const Assignment = mongoose.model('Assignment', schema, 'lyrics');
