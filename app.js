@@ -37,7 +37,7 @@ app.get('/getlyrics', (req, res) => {
     .then(
       axios.spread((lyricsres, youtuberes) => {
         const videoid = youtuberes.data.items[0].id.videoId;
-        const imgurl = youtuberes.data.items[0].snippet.thumbnails.default.url;
+        const imgurl = youtuberes.data.items[0].snippet.thumbnails.high.url;
         const youtubeurl = `www.youtube.com/watch?v=${videoid}`;
         const lyrics = new Lyricsdata({
           title: title,
